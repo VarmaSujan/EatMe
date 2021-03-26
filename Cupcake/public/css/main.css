@@ -1,0 +1,246 @@
+/*Start Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Fascinate", sans-serif;
+  color: #041a32;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/background_mauve.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #041a32;
+  font-family: "Fascinate", sans-serif;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+/*End global*/
+
+header {
+  font-family: "Fascinate", sans-serif;
+  width: 100%;
+  background-color: #041a32;
+  height: 150px;
+}
+
+.nav {
+  width: 100%;
+  display: inline-block;
+  z-index: 3;
+}
+
+#logo_nav {
+  width: 80px;
+  height: auto;
+  /* ALIGN???? SHOULD BE IN THE CENTER */
+  margin: 8px auto;
+  display: block;
+}
+
+.nav-list ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list ul li {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 1;
+  /* needs to go in the center */
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: #ae6171;
+  /* when you want to click on the link the hand appears not only when you hover over text but also around */
+}
+
+.banner1 {
+  background-image: url(../images/banner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+}
+
+.banner1 h2 {
+  font-family: Poiret One, italic;
+  color: #041a32;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  padding: 102px 0 0 16px;
+}
+
+.banner1 button {
+  background-color: #041a32;
+  border-color: black;
+  border-radius: 4px;
+  margin: 16px 0 0 16px;
+}
+
+.banner1 button a {
+  color: #ae6171;
+  font-size: 24px;
+  padding: 16px;
+}
+
+.banner2 {
+  background-image: url(../images/bakery1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+
+.banner2 h1 {
+  font-family: Poiret One, italic;
+  color: #ae6171;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  padding: 102px 0 0 16px;
+}
+@media only screen and (min-width: 750px) {
+  .banner1 {
+    height: 400px;
+  }
+
+  .banner1 h2 {
+    font-size: 40px;
+    padding-left: 80px;
+    padding-top: 150px;
+    padding-bottom: 16px;
+  }
+
+  .banner1 button {
+    margin: 80px;  
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .banner1 {
+    height: 500px;
+  }
+
+  .banner1 h2 {
+    font-size: 48px;
+    padding-left: 200px;
+    padding-top: 150px;
+    padding-bottom: 16px;
+  }
+
+  .banner1 button {
+    margin: 200px;
+    margin-top: 0;  
+  }
+
+  .banner1 button a:hover {
+    color: white;
+}
+
+#page_logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+#banner3 {
+  width: 100%;
+  height: 700px;
+  z-index: 1;
+}*/
+
+.icon_text {
+  width: 200px;
+  height: 50px;
+  color: #ae6171;
+}
+
+/* #fb_icon {
+  width: 300px;
+  height: 300px;
+  color:#ae6171;
+} */
+
+/*
+#page_logo {
+  width: 300px;
+  height: 325px;
+}
+*/
+
+/* FOOTER */
+
+footer,
+.push {
+  flex-direction: column;
+  background-color: #041a32;
+  height: 100px;
+  z-index: 1;
+}
+
+#footer_links {
+  width: 50%;
+  float: left;
+  padding: 16px;
+}
+
+#footer_right {
+  width: 50%;
+  float: right;
+  padding: 16px;
+  color: #ae6171;
+}
+
+#footer_right a {
+  color: #ae6171;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: right;
+}
+
+#footer_right input {
+  margin-right: 0;
+  margin-top: 8px;
+}
+
+#footer_right button {
+  font-family: "Fascinate", sans-serif;
+  font-size: 16px;
+  color: #ae6171;
+  background-color: #041a32;
+  border: none;
+  font-weight: bold;
+  padding-top: 8px;
+}
