@@ -139,7 +139,7 @@ header {
   }
 
   .banner1 button {
-    margin: 80px;  
+    margin: 80px;
     margin-top: 0;
   }
 }
@@ -158,89 +158,90 @@ header {
 
   .banner1 button {
     margin: 200px;
-    margin-top: 0;  
+    margin-top: 0;
   }
 
   .banner1 button a:hover {
     color: white;
-}
+  }
 
-#page_logo {
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  #page_logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/*
+  /*
 #banner3 {
   width: 100%;
   height: 700px;
   z-index: 1;
 }*/
 
-.icon_text {
-  width: 200px;
-  height: 50px;
-  color: #ae6171;
-}
+  .icon_text {
+    width: 200px;
+    height: 50px;
+    color: #ae6171;
+  }
 
-/* #fb_icon {
+  /* #fb_icon {
   width: 300px;
   height: 300px;
   color:#ae6171;
 } */
 
-/*
+  /*
 #page_logo {
   width: 300px;
   height: 325px;
 }
 */
 
-/* FOOTER */
+  /* FOOTER */
 
-footer,
-.push {
-  flex-direction: column;
-  background-color: #041a32;
-  height: 100px;
-  z-index: 1;
-}
+  footer,
+  .push {
+    flex-direction: column;
+    background-color: #041a32;
+    height: 100px;
+    z-index: 1;
+  }
 
-#footer_links {
-  width: 50%;
-  float: left;
-  padding: 16px;
-}
+  #footer_links {
+    width: 50%;
+    float: left;
+    padding: 16px;
+  }
 
-#footer_right {
-  width: 50%;
-  float: right;
-  padding: 16px;
-  color: #ae6171;
-}
+  #footer_right {
+    width: 50%;
+    float: right;
+    padding: 16px;
+    color: #ae6171;
+  }
 
-#footer_right a {
-  color: #ae6171;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 8px;
-  text-align: right;
-}
+  #footer_right a {
+    color: #ae6171;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: right;
+  }
 
-#footer_right input {
-  margin-right: 0;
-  margin-top: 8px;
-}
+  #footer_right input {
+    margin-right: 0;
+    margin-top: 8px;
+  }
 
-#footer_right button {
-  font-family: "Fascinate", sans-serif;
-  font-size: 16px;
-  color: #ae6171;
-  background-color: #041a32;
-  border: none;
-  font-weight: bold;
-  padding-top: 8px;
+  #footer_right button {
+    font-family: "Fascinate", sans-serif;
+    font-size: 16px;
+    color: #ae6171;
+    background-color: #041a32;
+    border: none;
+    font-weight: bold;
+    padding-top: 8px;
+  }
 }
