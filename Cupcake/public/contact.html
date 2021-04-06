@@ -5,57 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EatMe</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Poiret+One&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <header>
       <nav class="nav">
         <div>
-          <img
-            src="images/EatMe_CustomCakes_Logo_RGB.png"
-            id="logo_nav"
-            alt=""
-          />
+          <img src="images/EatMe_CustomCakes_Logo_RGB.png" id="logo_nav" alt=""> 
         </div>
         <div class="nav-list">
-          <ul>
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="products.html" class="nav-link">Products</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <ul >
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="products.html" class="nav-link">Products</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
-    </header>
+   </header>
 
-    <footer class= "footer">
-      <!-- Social media icons and links -->
-    <span id="foot_left">
-        <div>
-          <a href="https://www.instagram.com/?hl=en">
-            <i class="fab fa-instagram w3-large" id="insta_icon"></i>
-            <img src="images/instagram_text.svg" class="icon_text" alt="">              </span>
-          </a>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/" class="fb-link">
-            <i class="fab fa-facebook-square w3-large" id="fb_icon"></i>
-            <img src="images/facebook_text.svg" class="icon_text">
-          </a>
-        </div>
-        
-      <div id="foot_center">
-        <input type="email" id="footer_email" placeholder="John@mail.com">
-        <button>Subscribe</button>
+  <section>
+    <article>
+       <div class="openingH">
+        <h2>Opening hours:</h2>
+        <ul>
+          <li>Monday: Closed</li>
+          <li>Tuesday-Friday: 8am-5.30pm</li>
+          <li>Saturday-Sunday: 8am-1pm</li>
+        </ul>
+      </div>  
+      <div class="reachUs">
+        <h2>Reach us:</h2>
+        <ul>
+          <li>Phone: 040-93 00 11</li>
+          <li> Address: Hermansgatan 3,<br>212 11 Malmo</li>
+        </ul>
       </div>
+    </article>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8709.907373265503!2d13.016673023436612!3d55.607199436817375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3e730dad137%3A0x30256109d9c3bb27!2sHermansgatan%203%2C%20212%2011%20Malm%C3%B6!5e0!3m2!1sen!2sse!4v1617633348164!5m2!1sen!2sse" allowfullscreen="" loading="lazy"></iframe>
+    <br>
+  </section>
 
-      <!-- Email us and subsribe -->
-    
-      <section id="footer_right">
-        
-        <div id="footer_email"> 
-          <a href="contact.html">Email Us</a>
-          
-        </div>
+  <div class="bakery">
+    <h1>See you soon!</h1>
+  </div>
+
+    <!--footer-->
+    <footer>
+      <!--SM LINKS-->
+      <div class="SMlinks">
+        <a href="https://www.instagram.com/?hl=en">
+          <img src="images/IG-icon-pink.png" alt="pink instagram icon">
+          <img src="images/IG-logo-pink.png" alt="pink instagram logo">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="images/FB-icon-pink.png" alt="pink facebook icon">
+          <img src="images/FB-logo-pink.png" alt="pink facebook logo">      
+        </a>
+      </div>
+      
+      <div class="action">
+        <!--CALL TO ACTION-->
+        <a href="contact.html">Email Us</a>
+        <!--EMAIL INPUT-->
+        <form class="subscribe" action="">
+          <input type="email" placeholder="John@mail.com">
+          <input type="submit" value="Subscribe" class="subscribe_button">
+        </form>
+      </div>
     </footer>
   </body>
 </html>

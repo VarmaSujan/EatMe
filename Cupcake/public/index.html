@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -40,7 +42,7 @@
       </nav>
     </header>
 
-    <section class="banner1">
+    <section class="banner1"> <!-- IMG INSERTED IN CSS-->
       <h2>Let us sweeten <br> your celebration</h2>
       <button><a href="contact.html">Order Now!</a></button>
     </section>
@@ -48,40 +50,34 @@
     <div>
       <img src="images/EatMe_CustomCakes_Logo_RGB.png" id="page_logo" alt="" />
     </div>
-    <section class = "banner2">
-      
+
+    <section class="banner2">
       <h1>Baking like they used to</h1>
     </section>
 
-    <footer class= "footer">
-      <!-- Social media icons and links -->
-    <span id="foot_left">
-        <div>
-          <a href="https://www.instagram.com/?hl=en">
-            <i class="fab fa-instagram w3-large" id="insta_icon"></i>
-            <img src="images/instagram_text.svg" class="icon_text" alt="">              </span>
-          </a>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/" class="fb-link">
-            <i class="fab fa-facebook-square w3-large" id="fb_icon"></i>
-            <img src="images/facebook_text.svg" class="icon_text">
-          </a>
-        </div>
-        
-      <div id="foot_center">
-        <input type="email" id="footer_email" placeholder="John@mail.com">
-        <button>Subscribe</button>
+<!--footer-->
+    <footer>
+      <!--SM LINKS-->
+      <div class="SMlinks">
+        <a href="https://www.instagram.com/?hl=en">
+          <img src="images/IG-icon-pink.png" alt="pink instagram icon">
+          <img src="images/IG-logo-pink.png" alt="pink instagram logo">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="images/FB-icon-pink.png" alt="pink facebook icon">
+          <img src="images/FB-logo-pink.png" alt="pink facebook logo">      
+        </a>
       </div>
-
-      <!-- Email us and subsribe -->
-    
-      <section id="footer_right">
-        
-        <div id="footer_email"> 
-          <a href="contact.html">Email Us</a>
-          
-        </div>
+      
+      <div class="action">
+        <!--CALL TO ACTION-->
+        <a href="contact.html">Email Us</a>
+        <!--EMAIL INPUT-->
+        <form class="subscribe" action="">
+          <input type="email" placeholder="John@mail.com">
+          <input type="submit" value="Subscribe" class="subscribe_button">
+        </form>
+      </div>
     </footer>
   </body>
 </html>

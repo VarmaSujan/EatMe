@@ -14,8 +14,10 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-image: url("images/background_mauve.jpg") no-repeat center fixed;
+  background-image: url(../images/background_mauve.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 a {
@@ -50,7 +52,6 @@ header {
 #logo_nav {
   width: 80px;
   height: auto;
-  /* ALIGN???? SHOULD BE IN THE CENTER */
   margin: 8px auto;
   display: block;
 }
@@ -74,4 +75,160 @@ header {
   text-decoration: none;
   color: #ae6171;
   /* when you want to click on the link the hand appears not only when you hover over text but also around */
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    height: 100px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  #logo_nav {
+    margin: 10px 20px 10px 30px;
+  }
+}
+
+/*MAIN*/
+
+h2 {
+  /* NOT WORKING, IS IT LINKED???? font-family: "Fascinate", sans-serif;*/
+  font-family: Poiret One, italic;
+  font-size: 32px;
+  color: #041a32;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ae6171;
+}
+
+.container:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Poiret One, italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 750px) {
+  .section {
+    margin: 0 80px;
+  }
+  .container {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .section {
+    margin: 0 100px;
+  }
+  .container {
+    width: 25%;
+  }
+}
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: #041a32;
+  color: #ae6171;
+  font-family: 'Fascinate', cursive;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.SMlinks, .action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .SMlinks a img {
+  display: inline-block;
+  width: auto;
+  height: 24px;
+}
+
+.action a {
+  color: #ae6171;
+}
+
+.action .subscribe_button {
+  font-size: 16px;
+  color: #ae6171;
+  background-color: #041a32;
+  border: none;
+  font-family: 'Fascinate', cursive;
+}
+
+@media only screen and (min-width: 750px) {
+  footer {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .SMlinks, .action {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .action {
+    padding-right: 20px;
+    align-items: flex-end;
+  } 
+
+  .SMlinks {
+    padding-left: 20px;
+    align-items: flex-start;
+  }
 }

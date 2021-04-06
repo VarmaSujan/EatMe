@@ -8,12 +8,14 @@
 html {
   font-size: 10px;
   font-family: "Fascinate", sans-serif;
-  color: #041a32;
+  color: #ae6171;
 }
 
 body {
-  background-image: url(images/background_mauve.jpg);
+  background-image: url(../images/background_blue.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 a {
@@ -35,7 +37,7 @@ img {
 header {
   font-family: "Fascinate", sans-serif;
   width: 100%;
-  background-color: #041a32;
+  background-color: #ae6171;
   height: 150px;
 }
 
@@ -70,15 +72,166 @@ header {
 
 .nav-list ul li a {
   text-decoration: none;
-  color: #ae6171;
+  color:#041a32;
   /* when you want to click on the link the hand appears not only when you hover over text but also around */
 }
 
+@media only screen and (min-width: 900px) {
+  header {
+    height: 100px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  #logo_nav {
+    margin: 10px 20px 10px 30px;
+  }
+}
+
+/*MAIN*/
+
+.our_story, .gallery {
+  background-color: white;
+}
+
+.our_story img, .gallery img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 h1 {
-  font-family: Poiret One, italic;
-  color: #041a32;
   font-size: 32px;
-  font-weight: bold;
   text-align: center;
-  padding: 102px 0 0 16px;
+  padding-top: 16px;
+}
+
+.our_story p {
+  font-family: Poiret One, italic;
+  font-size: 24px;
+  margin: 16px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 750px) {
+  .our_story img, .gallery img {
+    width: 80%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .our_story p {
+    margin: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .our_story {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  .our_story img {
+    width: 40%;
+    height: 40%;
+    padding: 50px 25px 0 0;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .our_story div {
+    padding: 50px 0 0 25px;
+    text-align: left;
+    width: 500px;
+  }
+
+  .our_story h1, .our_story p {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .our_story p {
+    font-size: 16px;
+  }
+
+  .gallery_roll {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gallery_roll img {
+    width: 260px;
+    padding: 16px 8px 8px 0;
+    margin: 0;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #041a32;
+  color: #ae6171;
+  font-family: 'Fascinate', cursive;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}
+
+.SMlinks, .action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .SMlinks a img {
+  display: inline-block;
+  width: auto;
+  height: 24px;
+}
+
+.action a {
+  color: #ae6171;
+}
+
+.action .subscribe_button {
+  font-size: 16px;
+  color: #ae6171;
+  background-color: #041a32;
+  border: none;
+  font-family: 'Fascinate', cursive;
+}
+
+@media only screen and (min-width: 750px) {
+  footer {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .SMlinks, .action {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .action {
+    padding-right: 20px;
+    align-items: flex-end;
+  } 
+
+  .SMlinks {
+    padding-left: 20px;
+    align-items: flex-start;
+  }
 }

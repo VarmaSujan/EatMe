@@ -12,10 +12,10 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  background-image: url("images/background_mauve.jpg") no-repeat center fixed;
+  background-image: url(../images/background_blue.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 a {
@@ -25,8 +25,8 @@ a {
 }
 
 p {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-family: "Fascinate", sans-serif;
+  font-size: 24px;
 }
 
 img {
@@ -37,7 +37,7 @@ img {
 header {
   font-family: "Fascinate", sans-serif;
   width: 100%;
-  background-color: #041a32;
+  background-color: #ae6171;
   height: 150px;
 }
 
@@ -50,7 +50,6 @@ header {
 #logo_nav {
   width: 80px;
   height: auto;
-  /* ALIGN???? SHOULD BE IN THE CENTER */
   margin: 8px auto;
   display: block;
 }
@@ -72,6 +71,168 @@ header {
 
 .nav-list ul li a {
   text-decoration: none;
-  color: #ae6171;
+  color: #041a32;
   /* when you want to click on the link the hand appears not only when you hover over text but also around */
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    height: 100px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  #logo_nav {
+    margin: 10px 20px 10px 30px;
+  }
+}
+
+/*MAIN*/
+
+section {
+  background-color: white;
+}
+
+section article {
+  display: flex;
+  justify-content: center;
+}
+
+.openingH {
+  padding: 8px 8px 8px 0;
+}
+
+.reachUs {
+  padding: 8px 0 8px 8px;
+}
+
+.openingH ul, .reachUs ul {
+  list-style: none;
+  font-family: Poiret One, italic;
+}
+
+iframe {
+  display: block;
+  width: 95%;
+  height: 100px;
+  border-radius: 16px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.bakery {
+  background-image: url(../images/bakery1.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bakery h1 {
+  font-family: "Fascinate", sans-serif;
+  color: #ae6171;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px #000000;
+}
+
+@media only screen and (min-width: 750px) {
+  iframe {
+    height: 150px;
+  }
+
+  .openingH ul, .reachUs ul {
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+
+  .bakery {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  iframe {
+    height: 250px;
+  }
+
+  .bakery {
+    height: 500px;
+  }
+
+  .bakery h1 {
+    font-size: 48px;
+  }
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #041a32;
+  color: #ae6171;
+  font-family: 'Fascinate', cursive;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}
+
+.SMlinks, .action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .SMlinks a img {
+  display: inline-block;
+  width: auto;
+  height: 24px;
+}
+
+.action a {
+  color: #ae6171;
+}
+
+.action .subscribe_button {
+  font-size: 16px;
+  color: #ae6171;
+  background-color: #041a32;
+  border: none;
+  font-family: 'Fascinate', cursive;
+}
+
+@media only screen and (min-width: 750px) {
+  footer {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .SMlinks, .action {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .action {
+    padding-right: 20px;
+    align-items: flex-end;
+  } 
+
+  .SMlinks {
+    padding-left: 20px;
+    align-items: flex-start;
+  }
 }
